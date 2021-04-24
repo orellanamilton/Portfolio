@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import { ChakraProvider, extendTheme} from "@chakra-ui/react"
 import { createBreakpoints } from "@chakra-ui/theme-tools"
-import './index.css'
 
 const breakpoints = createBreakpoints({
   sm: "30em",
@@ -22,11 +21,17 @@ const theme = extendTheme({
     },
     warm: {
       100: "#f2f0eb"
+    },
+    grey: {
+      100: "#8e8e9d",
+      200: "#8e8e93",
+      300: "#3a3a3c",
+      400: "#1c1c1e",
     }
   },
   fonts: {
-    heading: "SF Pro",
-    body: "SF Compact",
+    heading: "Roboto",
+    Body: "Lato"
   },
  })
 
