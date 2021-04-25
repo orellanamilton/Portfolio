@@ -56,7 +56,7 @@ export default function AboutMe() {
         <Text
           textAlign={["justify", "justify", "center"]}
           px="4"
-          width={["100%", "100%", "80%"]}
+          width={["100%", "100%", "75%"]}
         >
           Siempre me llamo la atención el diseño, he podido tomar cursos de
           diseño UX/UI que me dieron muchas herramietnas para luego desarrollar.
@@ -71,7 +71,7 @@ export default function AboutMe() {
         <Text
           textAlign={["justify", "justify", "center"]}
           px="4"
-          width={["100%", "100%", "80%"]}
+          width={["100%", "100%", "75%"]}
         >
           Estos son algunos de los colores que suelo utilizar.
           <br /> La paleta de colores que utiliza Starbucks y Apple me agradan
@@ -168,7 +168,7 @@ export default function AboutMe() {
         <Text
           textAlign={["justify", "justify", "center"]}
           px="4"
-          width={["100%", "100%", "80%"]}
+          width={["100%", "100%", "75%"]}
         >
           <b>
             "It's not so much staying alive it's staying human that's
