@@ -20,12 +20,12 @@ import Clockwork from "../images/Clockwork.jpeg";
 
 /* COMPONENTS */
 import Navbar from "../components/NavBar";
-import SocialMedia from '../components/SocialMedia'
+import Footer from '../components/Footer'
 import Title from '../components/Title'
 
 export default function AboutMe() {
   return (
-    <Box bg="warm.100" pb="10">
+    <Box bg="warm.100" pb="20">
 
       <Navbar />
 
@@ -313,9 +313,8 @@ export default function AboutMe() {
             </a>
           </GridItem>
         </Grid>
+        <Footer />
       </Flex>
-
-     <SocialMedia />
     </Box>
   );
 }

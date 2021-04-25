@@ -10,6 +10,7 @@ import {
 /* COMPONENTS */
 import Navbar from "../components/NavBar";
 import Title from "../components/Title";
+import Footer from "../components/Footer"
 
 import Looking from "../images/Looking.png";
 
@@ -99,6 +100,7 @@ export default function Experience() {
          
         </Flex> 
         </Tooltip>
+        <Footer />
       </Flex>
     </Box>
   );

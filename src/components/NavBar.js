@@ -21,12 +21,12 @@ export default function NavBar() {
 
   return (
     <Flex as="nav" pos={"sticky"} w="100%" justify="space-between" zIndex="1" px="4" py="2" alignItems="center" bg={["warm.100", "warm.100", "transparent"]} top="0">
-      <RouteLink exact to="/">
-        <Image boxSize="50px" objectFit="fit" src={logo} alt="logo" />
+      <RouteLink as="logo" exact to="/">
+        <Image boxSize="50px" objectFit="fit" src={logo} alt="logo"  />
       </RouteLink>
 
       <Box>
-        <AiOutlineMenu size="30" onClick={onOpen} cursor="pointer" />
+        <AiOutlineMenu size="30" onClick={onOpen} cursor="pointer" aria-label="Menu button"/>
         <Drawer isOpen={isOpen} placement="right" onClose={onClose}>
           <DrawerOverlay>
             <DrawerContent bg="warm.100">

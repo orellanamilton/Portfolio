@@ -9,6 +9,7 @@ import { Box } from "@chakra-ui/react";
 import Home from "./pages/Home";
 import About from "./pages/AboutMe";
 import Experience from "./pages/Experience"
+import Skills from "./pages/Skills"
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
           </Route>
           <Route exact path="/Experience">
             <Experience/>
+          </Route>
+          <Route exact path="/Skills">
+            <Skills/>
           </Route>
         </Switch>
       </Router>
