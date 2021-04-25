@@ -66,18 +66,6 @@ export default function NavBar() {
                     Skills
                   </Heading>
                 </RouteLink>
-
-                <RouteLink exact to="/Contact">
-                  <Heading
-                    px="4"
-                    py="10"
-                    _hover={{ bg: "green.100" }}
-                    fontSize="lg"
-                    fontWeight="semibold"
-                  >
-                    Contacto
-                  </Heading>
-                </RouteLink>
               </Flex>
 
               <DrawerFooter
