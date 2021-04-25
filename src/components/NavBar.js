@@ -11,44 +11,84 @@ import {
   Image,
   Heading,
 } from "@chakra-ui/react";
-import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { Link as RouteLink} from "react-router-dom";
 
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import logo from "../images/Logo.svg";
 
 export default function NavBar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <Flex w="100%" justify="space-between" px="4" py='2' alignItems="center">
-      <Image boxSize="50px" objectFit="fit" src={logo} alt="logo" />
+    <Flex as="nav" pos={"sticky"} w="100%" justify="space-between" zIndex="1" px="4" py="2" alignItems="center" bg={["warm.100", "warm.100", "transparent"]} top="0">
+      <RouteLink exact to="/">
+        <Image boxSize="50px" objectFit="fit" src={logo} alt="logo" />
+      </RouteLink>
+
       <Box>
-        <AiOutlineMenu size='30' onClick={onOpen} cursor="pointer" />
+        <AiOutlineMenu size="30" onClick={onOpen} cursor="pointer" />
         <Drawer isOpen={isOpen} placement="right" onClose={onClose}>
           <DrawerOverlay>
             <DrawerContent bg="warm.100">
               <Flex flexDir="column" h="90vh">
-                <Heading cursor="pointer" p="4" py='10' _hover={{ bg: "green.100" }} to="/about" fontSize='lg' fontWeight="semibold">
-                  Sobre mí
-                </Heading>
-                <Heading cursor="pointer" p="4" py='10' _hover={{ bg: "green.100" }} to="/about" fontSize='lg' fontWeight="semibold">
-                  Experiencia
-                </Heading>
-                <Heading cursor="pointer" p="4" py='10' _hover={{ bg: "green.100" }} to="/about" fontSize='lg' fontWeight="semibold">
-                  Skills
-                </Heading>
-                <Heading cursor="pointer" px="4" py='10' _hover={{ bg: "green.100" }} to="/about" fontSize='lg' fontWeight="semibold">
-                  Contacto
-                </Heading>
+                <RouteLink exact to="/About">
+                  <Heading
+                    p="4"
+                    py="10"
+                    _hover={{ bg: "green.100" }}
+                    fontSize="lg"
+                    fontWeight="semibold"
+                  >
+                    Sobre mí
+                  </Heading>
+                </RouteLink>
+
+                <RouteLink exact to="/Experience">
+                  <Heading
+                    p="4"
+                    py="10"
+                    _hover={{ bg: "green.100" }}
+                    fontSize="lg"
+                    fontWeight="semibold"
+                  >
+                    Experiencia
+                  </Heading>
+                </RouteLink>
+
+                <RouteLink exact to="/Skills">
+                  <Heading
+                    p="4"
+                    py="10"
+                    _hover={{ bg: "green.100" }}
+                    fontSize="lg"
+                    fontWeight="semibold"
+                  >
+                    Skills
+                  </Heading>
+                </RouteLink>
+
+                <RouteLink exact to="/Contact">
+                  <Heading
+                    px="4"
+                    py="10"
+                    _hover={{ bg: "green.100" }}
+                    fontSize="lg"
+                    fontWeight="semibold"
+                  >
+                    Contacto
+                  </Heading>
+                </RouteLink>
               </Flex>
 
               <DrawerFooter
                 onClick={onClose}
-                borderTop="Solid"
-                borderTopWidth="1px"
+                borderTop="Solid 1px"
                 justifyContent="space-between"
               >
-                <Text cursor="pointer" fontSize='lg'>Cerrar</Text>{" "}
-                <AiOutlineClose cursor="pointer" size='30'/>
+                <Text cursor="pointer" fontSize="lg">
+                  Cerrar
+                </Text>{" "}
+                <AiOutlineClose cursor="pointer" size="30" />
               </DrawerFooter>
             </DrawerContent>
           </DrawerOverlay>
