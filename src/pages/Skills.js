@@ -14,6 +14,7 @@ import {
     SiTailwindcss,
     SiAdobeillustrator,
     SiAdobephotoshop,
+    SiSwift
 } from "react-icons/si";
 
 import {
@@ -50,7 +51,7 @@ export default function Skills() {
           <Grid
             mt="5"
             w={["90%", "90%", "75%"]}
-            autoRows="minmax(50px, 1fr)"
+            autoRows="minmax(70px, 1fr)"
             templateColumns="repeat(4, minmax(75px, 1fr))"
             gap={1}
             mb="5"
@@ -78,6 +79,15 @@ export default function Skills() {
                 <IoLogoReact size={45} />{" "}
                 <Text ml="2" fontSize="2xl">
                   React
+                </Text>
+              </Flex>
+            </GridItem>
+
+            <GridItem colSpan={[4, 4, 2, 1]}>
+              <Flex alignItems="center">
+                <SiSwift size={45} />{" "}
+                <Text ml="2" fontSize="2xl">
+                  Swift
                 </Text>
               </Flex>
             </GridItem>
@@ -127,7 +137,7 @@ export default function Skills() {
           <Grid
             mt="5"
             w={["90%", "90%", "75%"]}
-            autoRows="minmax(50px, 1fr)"
+            autoRows="minmax(75px, 1fr)"
             templateColumns="repeat(4, minmax(75px, 1fr))"
             gap={1}
             mb="5"
