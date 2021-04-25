@@ -5,11 +5,12 @@ export default function Header() {
   return (
     <Flex justifyContent="center" flexDir='column' textAlign="center" h={['80vh','80vh','80vh','80vh']} >
       <Heading
+      as="h1"
       fontSize={['3xl', '4xl', '6xl', '6xl']}
       fontWeight='thin'
-      color='grey.200'
+      color='grey.300'
       >
-        Hola! Soy <Text d="inline"  color='grey.300'>Milton Orellana.</Text>
+        Hola! Soy <b>Milton Orellana.</b>
       </Heading>
       <Heading
         as="h2"
