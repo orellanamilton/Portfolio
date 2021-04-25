@@ -162,9 +162,9 @@ export default function AboutMe() {
         </Grid>
       </Flex>
 
-      {/* //////////////// ¿Te gustan los libros? //////////////// */}
+      {/* //////////////// ¿Te gusta leer? //////////////// */}
       <Flex textAlign="center" alignItems="center" flexDir="column" mt="20">
-      <Title Text={"¿Te gustan los libros?"} />
+      <Title Text={"¿Te gusta leer?"} />
         <Text
           textAlign={["justify", "justify", "center"]}
           px="4"
