@@ -50,7 +50,7 @@ export default function NavBar() {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
         >
-          <Image boxSize="60px" objectFit="fit" src={logo} alt="logo" />
+          <Image boxSize="50px" objectFit="fit" src={logo} alt="logo" />
         </MotionBox>
       </RouteLink>
 
