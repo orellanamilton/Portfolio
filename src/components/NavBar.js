@@ -11,7 +11,7 @@ import {
   Image,
   Heading
 } from "@chakra-ui/react";
-import { motion, useViewportScroll } from "framer-motion";
+import { motion } from "framer-motion";
 
 import { Link as RouteLink } from "react-router-dom";
 
@@ -23,7 +23,6 @@ export default function NavBar() {
 
   const { isOpen, onOpen, onClose } = useDisclosure();
 
-  const { scrollYProgress } = useViewportScroll()
 
   return (
     <Flex
