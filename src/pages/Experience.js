@@ -7,10 +7,12 @@ import {
   IoLogoCss3,
 } from "react-icons/io5";
 
+import { BsLightningFill } from "react-icons/bs";
+
 /* COMPONENTS */
 import Navbar from "../components/NavBar";
 import Title from "../components/Title";
-import Footer from "../components/Footer"
+import Footer from "../components/Footer";
 
 import Looking from "../images/Looking.png";
 
@@ -74,31 +76,36 @@ export default function Experience() {
             <IoLogoCss3 size={30} />
             <IoLogoJavascript size={30} />
             <IoLogoReact size={30} />
+            <BsLightningFill size={30} />
           </Flex>
         </Flex>
 
-
         <Title Text={"iOS developer"} />
-              <Tooltip hasArrow arrowSize={15} label="Milton estudiando para llenar este cuadro!" textAlign='center' bg='green.100' color='black'>
-        <Flex
-          width={["95%", "100%", "75%"]}
-          minH="200px"
-          border="1px solid"
-          mt="-3"
-          mb="20"
-          flexDir="column"
-          alignItems="center"
+        <Tooltip
+          hasArrow
+          arrowSize={15}
+          label="Milton estudiando para llenar este cuadro!"
+          textAlign="center"
+          bg="green.100"
+          color="black"
         >
-   
+          <Flex
+            width={["95%", "100%", "75%"]}
+            minH="200px"
+            border="1px solid"
+            mt="-3"
+            mb="20"
+            flexDir="column"
+            alignItems="center"
+          >
             <Image
               boxSize={["200px", "200px", "300px", "400px"]}
               objectFit="fit"
               src={Looking}
               alt="Milton buscando un trabajo como desarrollador iOS. Si tenes alguna propuesta contactate conmigo!"
-              py='1'
+              py="1"
             />
-         
-        </Flex> 
+          </Flex>
         </Tooltip>
         <Footer />
       </Flex>

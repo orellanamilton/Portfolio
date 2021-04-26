@@ -6,7 +6,6 @@ import {
   IoLogoHtml5,
   IoLogoJavascript,
   IoLogoCss3,
-  IoLogoSass,
   IoGitMergeSharp
 } from "react-icons/io5";
 
@@ -20,6 +19,8 @@ import {
 import {
     FiFigma
 } from "react-icons/fi";
+
+import { BsLightningFill } from "react-icons/bs";
 
 
 /* COMPONENTS */
@@ -103,9 +104,9 @@ export default function Skills() {
  
             <GridItem colSpan={[4, 4, 2, 1]}>
               <Flex alignItems="center">
-                <IoLogoSass size={45} />{" "}
+                <BsLightningFill size={45} />{" "}
                 <Text ml="2" fontSize="2xl">
-                  Sass
+                  Chakra UI
                 </Text>
               </Flex>
             </GridItem>
