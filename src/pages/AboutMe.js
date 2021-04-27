@@ -38,13 +38,13 @@ export default function AboutMe() {
           width={["100%", "100%", "75%"]}
         >
           Comence a estudiar desarrollo de forma <b>autodidacta</b> en el 2020.
-          Luego de varios años en otra carrera sentia que necesitaba un cambio y
-          experiencias nuevas. Desde muy pequeño me intereso la tecnologia 👨‍💻 y
+          Luego de varios años en otra carrera sentía que necesitaba un cambio y
+          experiencias nuevas. Desde muy pequeño me interesó la tecnología 👨‍💻 y
           el diseño 🎨 ¿Por qué no intentar trabajar en ello?
           <br />
-          Desde un primer momento me interese por <b>frontend</b>, realizando
+          Desde un primer momento me interesé por <b>frontend</b>, realizando
           cursos, viendo videos en YouTube y formando proyectos con otras
-          personas estoy formandome como desarrollador. Por último, comence a
+          personas estoy formándome como desarrollador. Por último, comencé a
           estudiar <b>Swift</b> para poder convertirme en desarrollador{" "}
           <b>iOS</b>.
         </Text>
@@ -58,9 +58,9 @@ export default function AboutMe() {
           px="4"
           width={["100%", "100%", "75%"]}
         >
-          Siempre me llamo la atención el diseño, he podido tomar cursos de
+          Siempre me llamó la atención el diseño, he podido tomar cursos de
           diseño UX/UI que me dieron muchas herramietnas para luego desarrollar.
-          <br /> Intento reflejar mi gusto por lo simple en el desarrollo, no
+          <br /> Intento reflejar mí gusto por lo simple en el desarrollo, no
           solamente en la parte visual, sino también en el código.
         </Text>
       </Flex>
@@ -178,7 +178,7 @@ export default function AboutMe() {
           <br />
           Siempre es bueno hacerse un tiempo para leer. Más abajo podrás ver una
           "mini biblioteca" en donde te muestro un par de libros que me parecen
-          super interesantes. ¿Tenes alguno para recomendar?
+          super interesantes. ¿Tenés alguno para recomendar?
         </Text>
         <Grid
           mt="5"
